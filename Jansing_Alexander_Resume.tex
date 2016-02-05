@@ -56,7 +56,7 @@
 		\par \normalsize \normalfont}
 		
 \newcommand{\MySlogan}[1]{ % Slogan (optional)
-		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\large \usefont{OT1}{phv}{m}{n}\hfill \text{#1}
 		\par \normalsize \normalfont}
 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
@@ -64,14 +64,14 @@
 \newcommand{\PersonalEntry}[2]{
 		\noindent\hangindent=2em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
-		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\text{#1}}		       % Entry name (birth, address, etc.)
 		\hspace{1.5em} #2 \par}    % Entry value
 
 \newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
 		\noindent\hangindent=2em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
-		\textit{#1}}			   % Entry name (birth, address, etc.)
-		\hspace{1.5em} #2 \par}    % Entry value	
+		\text{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{3em} #2 \par}    % Entry value	
 		
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
@@ -98,18 +98,16 @@
 %\end{wrapfigure}
 \MyName{\normalsize Alexander Jansing}
 \MySlogan{Resume}
-
-\sepspace
-
+\vspace*{-1cm}
 %%% Personal details
 %%% ------------------------------------------------------------
 \NewPart{\normalsize Personal details}{}
 \begin{footnotesize}
 \PersonalEntry{Birth}{28 April, 1989}
-\PersonalEntry{Address}{7386 Pryor Rd.\\ \hspace*{2.5cm} Clinton, NY 13323}
+\PersonalEntry{Address}{8 St. Stanislaus St. Unit 5 \\ \hspace*{2.5cm} New York Mills, NY 13417}
 \PersonalEntry{Phone}{(315) 601-8991}
-\PersonalEntry{Mail}{\url{alexander.jansing@gmail.com}}
-\PersonalEntry{GitHub}{\url{https://github.com/DatasCat}}
+\PersonalEntry{Mail}{alexander.jansing@gmail.com}
+\PersonalEntry{GitHub}{https://github.com/Alexander-Jansing}
 \PersonalEntry{Clearance}{Secret}
 \end{footnotesize}
 
@@ -117,7 +115,7 @@
 %%% ------------------------------------------------------------
 \NewPart{\normalsize Education}{}
 
-\EducationEntry{M.S. Computer Science}{In Progress}{SUNY Polytechnic Institute}{Computer Science with a concentration on Cryptography}
+\EducationEntry{M.S. Computer Science}{2015 - Present}{SUNY Polytechnic Institute}{Computer Science with a concentration on Cryptography}
 
 \sepspace
 
@@ -127,23 +125,25 @@
 %%% ------------------------------------------------------------
 \NewPart{\normalsize Work experience}{}
 
-\WorkEntry{Graduate Assistant}{\normalsize 2015-2016}{SUNY Polytechnic Institute}{I grade homework, quizzes, tests, and hold office hours for Finite Mathematics.}
+\WorkEntry{Data Scientist}{\normalsize 2016 - Present}{Booz Allen Hamilton}{Collect, clean, and store data. Write scripts to query databases and analyse data to answer questions.}
 \sepspace
 
-\WorkEntry{MQ-9 Integrated Avionics Journeyman}{\normalsize 2012-present}{Air National Guard - Traditional Guardsman - 174$^{\text{th}}$ Aircraft Maintenance Squadron}{Troubleshoot, repair, and perform scheduled maintenance on the avionic and electrical systems of the MQ-9 remotely piloted aircraft.}
+\WorkEntry{Graduate Assistant}{\normalsize 2015 - 2016}{SUNY Polytechnic Institute}{Graded homework, held office hours, and designed grading schemes for Finite Mathematics.}
 \sepspace
 
-\WorkEntry{F-16 Integrated Avionics Journeyman}{\normalsize 2009-2012}{United States Air Force - Active Duty - 756$^{\text{th}}$ Aircraft Maintenance Squadron}{Troubleshoot, repair, and perform  scheduled maintenance on the avionic and electrical systems of the F-16 Fighter jet.
-}
+\WorkEntry{MQ-9 Integrated Avionics Journeyman}{\normalsize 2012 - Present}{Air National Guard - Traditional Guardsman - 174$^{\text{th}}$ Aircraft Maintenance Squadron}{Troubleshoot, repair, and perform scheduled maintenance on the avionics systems.}
+\sepspace
+
+\WorkEntry{F-16 Integrated Avionics Journeyman}{\normalsize 2009 - 2012}{United States Air Force - Active Duty - 756$^{\text{th}}$ Aircraft Maintenance Squadron}{Troubleshoot, repair, and perform scheduled maintenance on the avionics systems.}
 %%% Skills
 %%% ------------------------------------------------------------
 \NewPart{\normalsize Skills}{}
 
-\SkillsEntry{Languages}{English}
-\SkillsEntry{}{German (A2 - Goethe Institut)}
-
+\SkillsEntry{Languages}{\textsc{English}, \textsc{German (A2 - Goethe Institut)}}
 \SkillsEntry{Software}{\textsc{Matlab}, \LaTeX, \textsc{R}, \textsc{GIT}}
-\SkillsEntry{Programming}{\textsc{Java}, \textsc{C}, \textsc{Python}, \textsc{Javascript}, \textsc{HC11}, \textsc{HCS12}}
+\SkillsEntry{Programming}{\textsc{Python}, \textsc{Java}, \textsc{Javascript}, \textsc{Shell} \textsc{C}, \textsc{HC11}, \textsc{HCS12}}
+\SkillsEntry{Databases}{\textsc{MongoDB}, \textsc{SQL}}
+\SkillsEntry{Operating Systems}{\textsc{Linux (primarily Ubuntu)}, \textsc{Mac OSX}, \textsc{Windows}}
 
 
 %%% References
@@ -151,8 +151,8 @@
 \NewPart{\normalsize Other Information}{}
 \begin{itemize}
 \setlength\itemsep{-.15cm}
+\item[] Math Club Vice President and Treasurer
 \item[] Flight line driving qualified
 \item[] Member of the SUNY Oswego Math Department Program Board
-\item[] \hspace*{1cm} Aided in the implementation of the \textbf{ALEKS} program for freshmen and\\ \hspace*{1.05cm} transfer math placement
 \end{itemize}
 \end{document}
