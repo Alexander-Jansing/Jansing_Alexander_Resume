@@ -1,0 +1,78 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{enumitem}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Alexander}{Jansing}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{8 St Stanislaus St. Unit 5}{New York Mills, NY 13417}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(315)~601~8991}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{alexander.jansing@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Trivago Recruitment Team}{trivago GmbH \\ Bennigsen-Platz 1 \\ 40474 Düsseldorf, Deutschland}
+\today
+\opening{Dear Sir or Madam,}
+\closing{Hope to hear from you soon,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am planning on moving to Germany and I want to express my interest in any Software Engineering and Data Science positions you have for people early on in their careers. The particular city does not matter much, but I have spent some time in Leipzig while attending Univerität Leipzig's interDaF A2 course. I do plan on continuing on to improve my German. I currently do not have a visa to work in the EU, but I was born with dual citizenship to Germany and have been assured that gaining my status back will not be difficult.
+
+I have been working for Booz Allen Hamilton as a Data Scientist with Computer Science specializtion since January 2016 and it has been great. I've worked with several APIs like Apache Nifi, Hadoop, Solr, and Mongo, that would make me a valuable member of your team. I am always willing to learn what is needed to get the job done and do it as efficently as we can.
+
+I love to write code in my free time and I just started putting together a mini-cluster of Raspberry Pis to run a prime number generator program I came up with. I would of course follow any policies put in place by Trivago, but I'm always thinking of how to get my current task completed; even when I'm not physically at work. I've worked rough drafts of code to at home, because I didn't want to lose the idea while I wasn't at work. I would love to bring that kind of drive to Trivago and to ask the questions of the data:
+\begin{enumerate}[leftmargin=3em]
+\item What can we learn about our customers?
+\item What are their habits?
+\item What are the factors that seem to bring them back to the site?
+\item What categories can we put people in?
+\item What can we say about individual users?
+\end{enumerate}
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
