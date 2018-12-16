@@ -1,4 +1,11 @@
 \documentclass[]{twentysecondcv}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
  
 \begin{document}
 
@@ -102,27 +109,56 @@ Free time is spent with friends, at hackathons, writing code, or unwinding with 
 
 \end{twenty}
 
-
 \section{awards}
-
   \begin{twenty}
+    \twentyitem
+    {2018}
+    {Open House Planner} % Project Title
+    {Hack Upstate XII} % Prize - Where
+    {\href{https://medium.com/@hackupstate/hack-upstate-xii-the-results-are-in-e5be2f4edcc0}{Grand Prize and Best Use of Esri Technology}\\
+    A project that was inspired by a real-world problem.\\
+    ``What if two houses are significantly far apart, open at similar times, and there are other houses in each of their respective neighborhoods that open at different times? Is there a way I can plan my day of house hunting so that I can attend all of the open houses?"} % Reason
     \twentyitem
       {2018}
       {Move Helper} % Project Title
       {Hack Mohawk Valley} % Prize - Where
-      {Best Use or Open Data} % Reason
+      {\href{https://medium.com/@hackupstate/hack-mohawk-valley-the-results-are-in-4dff78924a61\#9a90}{Best Use or Open Data}} % Reason
     \twentyitem
-      {2018}
-      {Open House Planner} % Project Title
-      {Hack Upstate XII} % Prize - Where
-      {Grand Prize and Best Use of Esri Technology} % Reason
-    \twentyitem
-      {2018}
+    {2018}
       {Buffalo Crime Data} % Project Title
       {Hack Upstate XI} % Prize - Where
-      {Buffalo Civic Innovation Challenge} % Reason
-
+      {\href{https://medium.com/@hackupstate/hack-upstate-xi-the-results-are-in-5ee7973f25a\#ffa5}{Buffalo Civic Innovation Challenge}\\
+      } % Reason
   \end{twenty}
+
+\newpage
+\makeprofile
+\section{Presentations}
+\begin{twenty}
+  \twentyitem
+  {2016}
+  {An Overview and Brief Tutorial of Niagara Files}
+  {Booz Allen Hamilton Tech Talks} % Prize - Where
+  {Booz Allen Hamilton's internal webcast and conference line.
+  Niagara Files (Nifi) is a digraph ETL program that provides a web-based UI, loss tolerance, data provenance, and the ability to create custom processors using a Maven archetype. Covered what a FlowFile is and some of the most important concepts of Nifi that are needed to understand before working with Nifi.}
+  
+  \twentyitem
+  {2015}
+  {Lie Algebras}
+  {SUNY Oswego Mathematics Department}
+  {
+  Lie algebras have two special operators, the Lie bracket and the inner product and they both have special characteristics that impose algebraic and geometry restrictions on the spaces they apply to. We looked at how they interact, and wrote programs in \textsc{Sage (Python)} that generate general forms of the matrix representations of these interactions.}
+\end{twenty}
+
+\section{Computer skills}
+\begin{twenty}
+  \twentyitemshort
+  {Languages}{Java, Python, Scala, Matlab, R, Groovy, Bash, \LaTeX, Javascript, Bash, HTML, CSS}
+  \twentyitemshort {Databases}{Accumulo, OrientDB, TitanDB, MongoDB, Postgres, Hadoop} 
+  \twentyitemshort {Technologies}{Git, Jira, Confluence, Nifi, Apex, Spark, AWS, Maven, Docker, Docker Compose, Concourse}
+  \twentyitemshort {Systems}{Linux (CentOS and Ubuntu), Mac, Windows}
+\end{twenty}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
