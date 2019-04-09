@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+
+\usepackage{url, hyperref}
+% \hypersetup{
+%     colorlinks=true,
+%     % linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=cyan,
+% }
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    
+    %-------------------------
+    % Custom commands
+    \newcommand{\resumeItem}[2]{
+        \item\small{
+            \textbf{#1}{: #2 \vspace{-2pt}}
+            }
+            }
+            
+            \newcommand{\resumeSubheading}[4]{
+                \vspace{-1pt}\item
+                \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+                    \textbf{#1} & #2 \\
+                    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Alexander Jansing} & Email : \href{mailto:alexander.jansing@gmail.com}{alexander.jansing@gmail.com}\\
+  \href{https://github.com/apjansing}{https://github.com/apjansing} & Mobile : +1-315-601-8991 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SUNY Polytechnic Institute}{Utica, NY}
+      {Master of Science in Computer Science;  GPA: 3.67}{Aug. 2015 -- May. 2019}
+      $$
+      \begin{array}{ccc}
+        \textmd{Quantum Computing} & \textmd{AI Topic: Data Science} & \textmd{Machine Learning} \\
+        \textmd{Formal Methods} & \textmd{Big Data Platforms} & \textmd{Numerical Diff Equations}
+      \end{array}
+      $$
+    \resumeSubheading
+      {SUNY Oswego}{Oswego, NY}
+      {Bachelor of Science in Applied Mathematis}{Aug. 2012 -- May. 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Booz Allen Hamilton}{Rome, NY}
+    {Software Engineer, Implementation Specialist}{Oct 2018 - Present}
+    \resumeItemListStart
+        \resumeItem{Swift}
+        {Using Concourse, Sonarqube, Docker, Python, and Bash scripts to create CI/CD pipelines for the Air Force's VI2E program.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Lockheed Martin}{Liverpool, NY}
+        {Software Engineer, Asc}{Mar 2018 - Sept 2018}
+        \resumeItemListStart
+            \resumeItem{SEWIP and Q-53 BEMA}
+                {Developed analytics for noise reduction and identification of Modulation techniques using technologies like Matlab and Tensorflow.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Booz Allen Hamilton}{Rome, NY}
+        {Data Scientist, Junior -- Computer Science}{Jan 2016 - Mar 2018}
+        \resumeItemListStart
+            \resumeItem{Active Insights}
+            {Designed a data lake based using an Accumulo backend and OrientdDB for provenance tracking. ETL processes were performed with Apache Nifi.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {SUNY Polytechnic}{Utica, NY}
+        {Graduate Assistant}{Aug 2015 - Jan 2016}
+        \resumeItemListStart
+            \resumeItem{Finite Mathematics}
+            {Graded homework, held office hours, and designed grading schemes for Finite Mathematics.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Move Helper}
+      {\footnotesize HTML, CSS, Javascript, MongoDB  \hfill \emph{Best Use of Open Data} \hfill Hack Mohawk Valley \\ \normalsize An app to help you get the info you need to move into a new area. Data returned includes sources from Syracuse Open Data crime, lead, and code violations.}
+
+    \resumeSubItem{Open House Route Planner}
+    {\footnotesize Python, Docker, MongoDB, Esri API  \hfill \emph{Grand Prize} and \emph{Esri API Prize} \hfill Open Hack XI \\ \normalsize The program will allow the user enter a series of open houses and the returns a route that will allow the user to visit the maximum number of open houses given the constraints of travel time between locations and when the open houses are open.}
+
+    \resumeSubItem{Buffalo Crime Data}
+      {\footnotesize Python, MongoDB \hfill \emph{Best Use of Open Data} \hfill Open Hack X \\ \normalsize Hackathon project to discover crimes that occurred a specified distance away from police cameras and plotten them to show clusters of crimes in the city of Buffalo.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{\textbf{Languages}}{: Java, Python, Matlab, R, Scala, Groovy, OCaml, Bash, \LaTeX, HTML, CSS, Javascript}
+    
+   \item{\textbf{Technologies}}{: Git, Nifi, Hadoop, Spark, AWS, Maven, Docker, Docker-compose, MongoDB, Accumulo, Postgres, OrientDB, TitanDB, Jira, Confluence}
+   
+   \item{\textbf{Operating Systems}}{: Linux, MacOS}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
