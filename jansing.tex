@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,6 +16,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{multicol}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -86,6 +87,23 @@
   \href{https://github.com/apjansing}{https://github.com/apjansing} & Mobile : +1-315-601-8991 \\
 \end{tabular*}
 
+% --------PROGRAMMING SKILLS------------
+\section{Highlights}
+ \resumeSubHeadingListStart
+ \small
+  \begin{multicols}{2}
+  \item 4+ years in data science and software engineering industry
+  \item Active DoD TS/SCI
+  \item M.S. in Computer Science with a focus in Software Engineering and Mathematics
+  \item B.S. in Applied Mathematics
+  \item Operating Systems most comfortable with Linux, MacOS
+  \item Proficient with Java, Python, Bash
+  \item Comfortable with Matlab, R, \LaTeX
+  \item Familiar with HTML, CSS, Javascript, Scala, Groovy, OCaml
+  \item Technologies comfortable with Git, Nifi, Hadoop, Spark, AWS, Maven, Docker, Docker-compose, ArgoCD, Kubernetes, MongoDB, Accumulo, Postgres, Jira, Confluence
+  \end{multicols}
+\normalsize
+ \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -95,7 +113,7 @@
       {Master of Science in Computer Science;  GPA: 3.64}{Aug. 2015 -- May. 2019}
       \resumeItemListStart
         \resumeItem{Final Project: \href{https://github.com/apjansing/Open-House-Route-Planner}{Open House Route Planner}}
-          {\href{https://github.com/apjansing/Open-House-Route-Planner}{A project} that allows the user t}
+          {\href{https://github.com/apjansing/Open-House-Route-Planner}{A project} that allows the user to provide a series of calendar events and returns several routes one could take to visit as many open houses as possible. Project uses the \emph{Esri API} for geocoding and route finding, \emph{MongoDB} for caching of locations, and \emph{Docker-compose} for infrastructure. Idea originally worked on during hack Upstate (see Projects section).}
         \resumeItem{Relevant Classwork}
           {Quantum Computing, AI Topic: Data Science, Machine Learning, Formal Methods, Big Data Platforms, Numerical Diff Equations}
       \resumeItemListEnd
@@ -149,26 +167,17 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Move Helper}
-      {\footnotesize HTML, CSS, Javascript, MongoDB  \hfill \emph{Best Use of Open Data} \hfill Hack Mohawk Valley \\ \normalsize An app to help you get the info you need to move into a new area. Data returned includes sources from Syracuse Open Data crime, lead, and code violations.}
-
     \resumeSubItem{Open House Route Planner}
     {\footnotesize Python, Docker, MongoDB, Esri API  \hfill \emph{Grand Prize} and \emph{Esri API Prize} \hfill Hack Upstate XI \\ \normalsize The program will allow the user enter a series of open houses and the returns a route that will allow the user to visit the maximum number of open houses given the constraints of travel time between locations and when the open houses are open.}
+
+    \resumeSubItem{Move Helper}
+      {\footnotesize HTML, CSS, Javascript, MongoDB  \hfill \emph{Best Use of Open Data} \hfill Hack Mohawk Valley \\ \normalsize An app to help you get the info you need to move into a new area. Data returned includes sources from Syracuse Open Data crime, lead, and code violations.}
 
     \resumeSubItem{Buffalo Crime Data}
       {\footnotesize Python, MongoDB \hfill \emph{Best Use of Open Data} \hfill Hack Upstate X \\ \normalsize Hackathon project to discover crimes that occurred a specified distance away from police cameras and plotten them to show clusters of crimes in the city of Buffalo.}
   \resumeSubHeadingListEnd
 
 
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{\textbf{Languages}}{: Java, Python, Matlab, R, Scala, Groovy, OCaml, Bash, \LaTeX, HTML, CSS, Javascript}
-    
-   \item{\textbf{Technologies}}{: Git, Nifi, Hadoop, Spark, AWS, Maven, Docker, Docker-compose, MongoDB, Accumulo, Postgres, OrientDB, TitanDB, Jira, Confluence}
-   
-   \item{\textbf{Operating Systems}}{: Linux, MacOS}
- \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
