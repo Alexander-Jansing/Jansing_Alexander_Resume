@@ -159,28 +159,6 @@
 {\footnotesize Python, MongoDB \hfill \emph{Best Use of Open Data} \\ \normalsize Hackathon project to discover crimes that occurred a specified distance away from police cameras and plotten them to show clusters of crimes in the city of Buffalo.}
 \resumeSubHeadingListEnd
 
-%-----------Publications-----------------
-\section{Publications}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-  {Medium}{}
-  {}{April 2020 - Present}
-  \resumeItemListStart
-    \resumeItem{Writing a Custom Concourse Resource (Four Parts)}
-    {
-    \begin{enumerate}
-      \item --- Overview
-      \item --- the \textsf{check}
-      \item --- the \textsf{in}
-      \item --- the \textsf{out}
-    \end{enumerate}
-
-    }
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
@@ -198,12 +176,34 @@
 {Bachelor of Science in Applied Mathematis}{Aug. 2012 -- May. 2015}
 \resumeSubHeadingListEnd
 
+%-----------Publications-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Medium}{}
+  {}{April 2020 - Present}
+  \resumeItemListStart
+    \resumeItem{Writing a Custom Concourse Resource --- (Four Parts)}
+    {
+    \begin{enumerate}
+      \item --- Overview \\ An overview of all the components involved in writing your own Concourse resource. This and the following articles were inspired by the process it took to write my first resource as the tutorials available were not sufficient.
+      \item --- the \textsf{check} \\ The tutorial goes over how the \textsf{check} component detects new versions at an endpoint and how to use that in the \textsf{in} component of the resource.
+      \item --- the \textsf{in} \\ The tutorial goes over how the \textsf{in} uses the output of the \textsf{check} component to fetch data from an endpoint, save that data, what needs to be output, and how it interacts with the \textsf{out}.
+      \item --- the \textsf{out} \\ The tutorial goes over how the \textsf{out} component delivers data to an endpoint and how it runs the \textsf{in} component to fetch the data the \textsf{out} just wrote.
+    \end{enumerate}
+    }
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
 % --------PROGRAMMING SKILLS------------
  \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{\textbf{Languages}}{: Java, Python, Matlab, R, Scala, Groovy, OCaml, Bash, \LaTeX, HTML, CSS, Javascript}
     
-    \item{\textbf{Technologies}}{: Git, Nifi, Hadoop, Spark, AWS, Maven, Docker, Docker-compose, MongoDB, Accumulo, Postgres, OrientDB, TitanDB, Jira, Confluence}
+    \item{\textbf{Technologies}}{: Git, Nifi, Hadoop, Spark, Concourse, Maven, Docker, Docker-compose, MongoDB, Accumulo, Postgres, OrientDB, TitanDB, AWS, Jira, Confluence}
     
     \item{\textbf{Operating Systems}}{: Linux, MacOS}
   \resumeSubHeadingListEnd
